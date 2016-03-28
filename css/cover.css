@@ -1,0 +1,343 @@
+/* 
+Links
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+Custom default button
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; Prevent inheritence from `body`
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+ */
+/*
+* Base structure
+*/
+
+html,
+body {
+    /* 
+    width: 100%;
+    */
+    height: 100%;
+    background: #4C73BF;
+}
+
+body {
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    /*  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+    margin-top: 10%;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+    padding-top: 0;
+}
+/*
+* Header
+*/
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.9);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+}
+
+
+/*
+* Cover
+*/
+
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/*
+* Footer
+*/
+
+/*
+* Affix and center
+*/
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .cover-container {
+        width: 700px;
+    }
+}
+
+
+.profilecover{
+    display: inline;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    border-radius: 100%;
+}
+.skills {
+    padding-top: 3em;
+    min-height: 200px;
+    background-color: #4C73BF;
+}
+.experience {
+    min-height: 200px;
+    background: #03A9F4;
+}
+.portfolio {
+    min-height: 200px;
+    background: #B3E5FC;
+}
+.headsec{
+    color: #ffffff;
+}
+.footer {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    background: #fff;
+}
+
+
+
+
+.subtitle {
+    color:aliceblue;
+}
+
+
+
+/*
+Globals
+*/
+
+
+/* 
+body {
+padding-top:70px;
+}
+
+
+@media (max-width: 2000px) {
+.navbar-header {
+float: none;
+}
+.navbar-left,.navbar-right {
+float: none !important;
+}
+.navbar-toggle {
+display: block;
+}
+.navbar-collapse {
+border-top: 1px solid transparent;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+top: 0;
+border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+display: none!important;
+}
+.navbar-nav {
+float: none!important;
+margin-top: 7.5px;
+}
+.navbar-nav>li {
+float: none;
+}
+.navbar-nav>li>a {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.collapse.in{
+display:block !important;
+}
+}
+.navbar-inverse {
+background-color: transparent;
+border-color: transparent;
+}
+.navbar-inverse .navbar-collapse{
+border-color: transparent;
+}
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Skills</a></li>
+<li><a href="#about">Experience</a></li>
+<li><a href="#contact">Portfolio</a></li>
+</ul>
+</div>
+</nav>
+
+*/
+
+/*
+ini buat navbar biar collapse terus.
+
+
+
+navbar yg dimodif:
+line 4666
+line 6802
+*/
+
+
+.centerblock {
+    display: inline;
+}
+
+.orbit-container {
+    width: 100%;
+    height: 100%;
+}
+
+.yangdalem {
+    overflow: hidden;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    background: none;
+}
+
+.gooo {
+    z-index: 100;
+    bottom: 0;
+    position: absolute;
+    left:40% !important;
+}
+
+@media only screen and (max-width:480px) {
+.gooo {
+left:35% !important;
+  }
+}
+@media only screen and (min-width:768px) {
+.gooo{
+left:45% !important;
+    }
+}
+
+
+}
+
+.profilecover2 {/* 
+    z-index: 200;
+    position: absolute;
+     */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+}
+hr{
+    border-top:0;
+}
+
+.text-white {
+    color: #fff;
+}
